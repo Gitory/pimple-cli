@@ -1,0 +1,27 @@
+{
+    "name": "gitory/pimple-cli",
+    "description": "CLI commands for Pimple applications",
+    "require": {
+        "pimple/pimple": "~3.0"
+    },
+    "require-dev": {
+        "phpspec/phpspec": "~2.0"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Julien Richarte",
+            "email": "julien.richarte@gmail.com"
+        },
+        {
+            "name": "Mathieu Rochette",
+            "email": "mathieu@rochette.cc"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Gitory\\PimpleCli\\": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
