@@ -1,0 +1,21 @@
+language: php
+
+php:
+  - 5.4
+  - 5.5
+  - 5.6
+  - hhvm
+
+before_script:
+  - composer install -n
+
+script:
+  - vendor/bin/phpspec run -f pretty
+
+notifications:
+  webhooks:
+    urls:
+      - https://webhooks.gitter.im/e/7c4d5cc8923dd132067a
+    on_success: always  # options: [always|never|change] default: always
+    on_failure: always  # options: [always|never|change] default: always
+    on_start: false     # default: false
