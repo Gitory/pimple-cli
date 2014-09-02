@@ -7,6 +7,10 @@
     "require-dev": {
         "phpspec/phpspec": "~2.0"
     },
+    "suggest": {
+        "silex/silex": "Provide a light framework to build PHP applications",
+        "symfony/console": "The Console component allows you to create command-line commands"
+    },
     "license": "MIT",
     "authors": [
         {
