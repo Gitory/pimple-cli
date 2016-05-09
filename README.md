@@ -90,6 +90,7 @@ $silexApp['user.new.command'] = function () {
 };
 
 $consoleApp = new Symfony\Component\Console\Application($silexApp);
+$consoleApp->setName('My Application');
 $consoleApp->addCommands($silexApp['command.resolver']->commands());
 $consoleApp->run();
 
