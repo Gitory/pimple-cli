@@ -89,7 +89,7 @@ $silexApp['user.new.command'] = function () {
     return new Acme\DemoBundle\Command\GreetCommand();
 };
 
-$consoleApp = new Symfony\Component\Console\Application($silexApp);
+$consoleApp = new Symfony\Component\Console\Application();
 $consoleApp->addCommands($silexApp['command.resolver']->commands());
 $consoleApp->run();
 
